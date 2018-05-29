@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title{
+	background: #2E294E;
+	color: #fff;
+	font-size: 48px;
+	text-align: center;
+	padding: 50px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.clock{
+	width: 200px;
+	height: 200px;
+	margin:0 auto;
+	position: relative;
+}
+.clock-face{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border:5px solid #333;
+	border-radius: 50%;
+	position: relative;
+}
+.hand{
+	position: absolute;
+	width: 50%;
+	height: 5px;
+	background: #333;
+	top: 50%;
+	left: 0;
+	transform-origin: 100%;
+	transform: translate(0,-50%) rotate(90deg);
+	border-radius: 50%;
+	transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.t{
+	position: absolute;
+	left: 50%;
+	top:-20px;
+	transform: translate(-50%,0);
+}
+.six{
+	position: absolute;
+	left: 50%;
+	bottom:-20px;
+	transform: translate(-50%,0);
+}
+.three{
+	position: absolute;
+	top: 50%;
+	right:-20px;
+	transform: translate(0,-50%);
+}
+.nine{
+	position: absolute;
+	top: 50%;
+	left:-20px;
+	transform: translate(0,-50%);
+}
+.t{
+	position: absolute;
+	left: 50%;
+	top:-20px;
+	transform: translate(-50%,0);
+}
+.center-point{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #333;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+}
