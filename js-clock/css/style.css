@@ -3,14 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body{
+	background: #181E50;
+}
 .title{
-	background: #2E294E;
-	color: #fff;
+	color: #181E50;
 	font-size: 48px;
 	text-align: center;
 	padding: 50px;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+	background: #aeb5e8;
 }
 .clock{
 	width: 200px;
@@ -22,43 +25,73 @@
 	width: 150px;
 	height: 150px;
 	margin: 0 auto;
-	border:5px solid #333;
+	border:1px solid #fff;
 	border-radius: 50%;
 	position: relative;
+	background: #181E50;
 }
 .hand{
 	position: absolute;
 	width: 50%;
-	height: 5px;
+	height: 2px;
 	background: #333;
 	top: 50%;
 	left: 0;
 	transform-origin: 100%;
 	transform: translate(0,-50%) rotate(90deg);
-	border-radius: 50%;
+	border-radius: 80%;
 	transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
+.hour-hand{
+	background: #fff;
+	opacity: 1;
 
+	height: 3px;
+}
+.min-hand{
+	background: #fff;
+	opacity: .8;
+
+	height: 2px;
+}
+.second-hand{
+	background: #fff;
+	opacity: .5;
+
+	height: 2px;
+}
 .t{
 	position: absolute;
+	height: 10px;
+	width: 0;
+	border-right:1px solid #fff;
 	left: 50%;
 	top:-20px;
 	transform: translate(-50%,0);
 }
 .six{
 	position: absolute;
+	width: 0;
+	height: 10px;
+	border-right:1px solid #fff;
 	left: 50%;
 	bottom:-20px;
 	transform: translate(-50%,0);
 }
 .three{
+	height: 0px;
+	width: 10px;
+	border-top:1px solid #fff;
 	position: absolute;
 	top: 50%;
 	right:-20px;
 	transform: translate(0,-50%);
 }
 .nine{
+	height: 0px;
+	width: 10px;
+	border-top:1px solid #fff;
 	position: absolute;
 	top: 50%;
 	left:-20px;
